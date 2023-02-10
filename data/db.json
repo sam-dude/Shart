@@ -1,0 +1,158 @@
+{
+    "friendsDetails":[
+        {
+            "name": "Samuel Ibiyemi",
+            "messages": {
+                "recieved":[
+                    "Hi",
+                    "How are you doing"
+                ],
+                "sent":[
+                    "How are you doing"
+                ]
+            },
+            "lastMsg": "Hi, what about some paddings.", 
+            "time": 10, 
+            "status": "Active now", 
+            "id": 1
+        },
+        {
+            "name": "Festus Charles",
+            "messages": {
+                "recieved":[
+                    "Hi",
+                    "How are you doing"
+                ],
+                "sent":[
+                    "How are you doing"
+                ]
+            },
+            "lastMsg": "Boss, What about the...", 
+            "time": 13, 
+            "status": "Active now", 
+            "id":2
+        },
+        {
+            "name": "Grtnx",
+            "messages": {
+                "recieved":[
+                    "Hi",
+                    "How are you doing"
+                ],
+                "sent":[
+                    "How are you doing"
+                ]
+            }, 
+            "lastMsg": 
+            "We are thinking of starti...", 
+            "time": 20, 
+            "status": "Active now", 
+            "id": 3
+        },
+        {
+            "name": "Oluwagbo",
+            "messages": {
+                "recieved":[
+                    "Hi",
+                    "How are you doing"
+                ],
+                "sent":[
+                    "How are you doing"
+                ]
+            },
+            "lastMsg": "Boss, What about the...", 
+            "time": 30, 
+            "status": "Active now", 
+            "id":4
+        },
+        {
+            "name": "Smith James",
+            "messages": {
+                "recieved":[
+                    "Hi",
+                    "How are you doing"
+                ],
+                "sent":[
+                    "How are you doing"
+                ]
+            },
+            "lastMsg": "Boss, What about the...", 
+            "time": 35, 
+            "status": "Active now", 
+            "id":5
+        },
+        {
+            "name": "Godsend",
+            "messages": {
+                "recieved":[
+                    "Hi",
+                    "How are you doing"
+                ],
+                "sent":[
+                    "It is an astonishing fact that poeple seems to lose it easily. Christians are no exception."
+                ]
+            }, 
+            "lastMsg": 
+            "We are thinking of starti...", 
+            "time": 30, 
+            "status": "Active now", 
+            "id": 6
+        },
+        {
+            "name": "Preshie",
+            "messages": {
+                "recieved":[
+                    "Hi",
+                    "How are you doing"
+                ],
+                "sent":[
+                    "Good morning Sam 😘"
+                ]
+            },
+            "lastMsg": 
+            "Good evening 🤩", 
+            "time": 60, 
+            "status": "Active now", 
+            "id": 7
+        },
+        {
+            "name": "Dami",
+            "messages": {
+                "recieved":[
+                    "Hi",
+                    "How are you doing"
+                ],
+                "sent":[
+                    "Good morning Boss 😴",
+                    "How was your night?"
+                ]
+            },
+            "lastMsg": "We are thinking of starti...", 
+            "time": 5, 
+            "status": "Active 5mins ago", 
+            "id": 8
+        },
+        {
+            "name": "Spurgeon",
+            "messages": {
+                "recieved":[
+                    {
+                        "msg": "Hi",
+                        "time": 0
+                    },
+                    {
+                        "msg": "How are you doing",
+                        "time": 1
+                    }
+                ],
+                "sent":[
+                    "How are you doing"
+                ]
+            },
+            "lastMsg": "Have you read your Bible today?",
+            "status":"Active 12mins ago",
+            "time" : 15,
+            "id": 9
+        }
+    ]
+}

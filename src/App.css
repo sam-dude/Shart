@@ -1,0 +1,81 @@
+:root{
+    --background: ;
+}
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: #aaaaa8;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #555;
+}
+.App{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}.content{
+    display: flex;
+    flex-direction: row;
+}
+.Sidebar{
+    background-color: #12004a;
+    width: calc(1/9 * 100vw);
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}.Sidebar ul{
+    list-style: none;
+    color: #fff;
+    }.Sidebar ul li{
+        margin: auto;
+        color: #fff;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 16px;
+        cursor: pointer;  
+        }.Sidebar ul li:hover{
+            color: #fff;
+        }.Sidebar ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+@media (max-width: 1023px){
+    .Sidebar{
+        position: fixed;
+        color: #aaaaa8;
+        background-color: #f1f1f1;
+        z-index: 2;
+        width: 100vw;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        bottom: 0;
+    }.Sidebar ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .Sidebar ul li, .Sidebar ul li a{
+        color: #818181;
+        font-size: 16px;
+        cursor: pointer;  
+        }.Sidebar ul li:nth-child(4), .Sidebar ul li:nth-child(5){
+            display: none;
+        }
+} 

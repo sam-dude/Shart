@@ -1,0 +1,116 @@
+.MsgView{
+    width: calc((1 - (1/3 + 1/9)) * 100vw);
+    background-color: #fff;
+    height: 100vh;
+}.MsgView>.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 4px 3px 16px;
+}.MsgView>.head>.lhs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }.MsgView>.head>.lhs>.dp{
+        background-color: midnightblue;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        color: #fff;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        text-align: center;
+        margin-right: 16px;
+        }
+    .MsgView>.head>.lhs>.details{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: space-between;
+        }.MsgView>.head>.lhs>.details>.name{
+            font-size: 18px;
+            font-weight: 600;
+        }.MsgView>.head>.lhs>.details>.status{
+            font-size: 14px;
+            color: #aaaaa8;
+        }
+.MsgView>.MsgSpace{
+    height: calc(100vh - 130px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    }.MsgView>.MsgSpace>.msgSent{
+        margin: .5rem .8rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        align-items: flex-end;
+        }.MsgView>.MsgSpace>.msgSent>.dp{
+            background-color: midnightblue;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            top: 100px;
+            text-align: center;
+            margin-right: 8px;
+        }.MsgView>.MsgSpace>.msgSent>.msg-single{
+            width: 80%;
+        }
+        .MsgView>.MsgSpace>.msgSent>.msg-single>.msg{
+            background-color: #6d41f6;
+            color: #fff;
+            max-width: 80%;
+            min-width: 80%;
+            border-radius: 20px;
+            margin: 6px 0;
+            padding: .6rem 1rem;
+        }.MsgView>.MsgSpace>.msgSent>.msg-single>.msg:last-child{
+            border-bottom-left-radius: 2px;
+        }
+.MsgView>.msgInput{
+    bottom: 0;
+    width: 100%;
+    
+    }.MsgView>.msgInput>form{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 4px 5px;
+        }
+        .MsgView>.msgInput>form>textarea{
+            font-size: 16px;
+            scrollbar-gutter: none;
+            scrollbar-color: transparent;
+            width: 99%;
+            height: 42px;
+            padding: 10px;
+            padding: 10px;
+            margin: auto;
+            outline: none;
+            border-radius: 20px;
+            background-color: #Fff;
+            border: 1px solid #aaaaa8;
+            padding-left: 16px;
+        }
+    .MsgView>.msgInput>form>button{
+            font-size: 16px;
+            border: none;
+            background-color: #12004a;
+            border-radius: 20px;
+            color: #fff;
+            padding: 10px;
+            margin: 0px 5px;
+    }
