@@ -45,15 +45,15 @@
         padding-left: 2rem;
         }.PeopleList>.person>.dp{
             background-color: midnightblue;
-            width: 30px;
-            height: 30px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             color: #fff;
             font-weight: 600;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 15px;
+            font-size: 20px;
             text-align: center;
             margin-right: 16px;
         }.PeopleList>.person>.name{

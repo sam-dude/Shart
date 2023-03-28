@@ -46,14 +46,15 @@
     height: calc(100vh - 130px);
     overflow-y: scroll;
     overflow-x: hidden;
-    }.MsgView>.MsgSpace>.msgSent{
+    }
+    .MsgView>.MsgSpace>.message>.msgSent{
         margin: .5rem .8rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 50%;
         align-items: flex-end;
-        }.MsgView>.MsgSpace>.msgSent>.dp{
+        }.MsgView>.MsgSpace>.message>.msgSent>.dp{
             background-color: midnightblue;
             width: 24px;
             height: 24px;
@@ -66,10 +67,10 @@
             top: 100px;
             text-align: center;
             margin-right: 8px;
-        }.MsgView>.MsgSpace>.msgSent>.msg-single{
+        }.MsgView>.MsgSpace>.message>.msgSent>.msg-single{
             width: 80%;
         }
-        .MsgView>.MsgSpace>.msgSent>.msg-single>.msg{
+        .MsgView>.MsgSpace>.message>.msgSent>.msg-single>.msg{
             background-color: #6d41f6;
             color: #fff;
             max-width: 80%;
@@ -77,9 +78,23 @@
             border-radius: 20px;
             margin: 6px 0;
             padding: .6rem 1rem;
-        }.MsgView>.MsgSpace>.msgSent>.msg-single>.msg:last-child{
+        }.MsgView>.MsgSpace>.message>.msgSent>.msg-single>.msg:last-child{
             border-bottom-left-radius: 2px;
         }
+        .MsgView>.MsgSpace>.message>.msgReceived{
+            display: block;
+            float: right;
+            }.MsgView>.MsgSpace>.message>.msgReceived>.msgR{
+                text-align: right;
+            }.MsgView>.MsgSpace>.message>.msgReceived>.msgR>.msg{
+                background-color: #f0ebff;
+                color: #12004a;
+                border-radius: 20px;
+                margin: 6px;
+                padding: .6rem 1rem;
+            }.MsgView>.MsgSpace>.message>.msgReceived>.msgR>.msg:last-child{
+                border-bottom-right-radius: 2px;
+            }
 .MsgView>.msgInput{
     bottom: 0;
     width: 100%;

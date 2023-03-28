@@ -4,8 +4,19 @@ import { useState, useEffect } from 'react';
 const MsgView = ({dp, userName, status}) => {
     const [Msg, setMsg] = useState('');
     const handleSubmit = (e) => {
+        const type = "received";
         e.preventDefault();
-
+        const date = new Date();
+        const time = date.getMinutes();
+        const message = {Msg, time, type};
+        fetch('http://localhost:5000/friendsDetails', {
+            method: 'POST',
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(message)
+        }).then(res => {
+            console.log(res.body)
+            console.log("New message added!");
+        })
     };
     const [msgSent, setMsgSent] = useState(null)
     useEffect(() => {
@@ -14,12 +25,10 @@ const MsgView = ({dp, userName, status}) => {
             return res.json();
           })
           .then(data => {
-            console.log(data.map(data => (data.name)));
             const messages = data.map(data => (data.messages));
-            console.log()
             setMsgSent(data);
           })
-    }, []);
+    }, [Msg]);
      
     return ( 
         <div className="MsgView">
@@ -38,16 +47,39 @@ const MsgView = ({dp, userName, status}) => {
                 .filter(person => person.name === userName)
                 .map(person => ( person.messages
                 ))
-                .map((msg, index) => <div className="msgSent" key={index}>
-                    <div className="dp">{dp}</div>
+                .map(messages => messages)
+                .sort((a, b) => a.time > b.time ? 1 : -1 )
+                .map((msg, index) => (
+                <div className="message" key={index}>
+                    <div className="msgSent">
+                        <div className="dp">{dp}</div>
 
                     <div className="msg-single">
-                    {msg.sent.map((msg, index) =>
-                    <div className="msg" key={index}>{msg}</div> 
+                    {msg
+                    .filter(msg => msg.type === 'sent')
+                    .map((msg, index) =>
+                    <div className="msg" key={index}>{msg.msg}</div> 
                     )}
+                    </div> 
                     </div>
-                </div>)}
-                <div className="msgRecieved">{Msg}</div>
+
+                    
+                    <div className="msgReceived" key=   {index}>
+                        <div className="msgR">
+                            { msg
+                            .filter( msg => msg.type === 'received')
+                            .map((msg, index) =>
+                                <div className="msg" key={index}>{msg.msg}</div>
+                            ) }
+                        </div>
+                    </div>
+                
+                </div>
+                
+                )
+                
+                )}
+                
             </div>
             <div className="msgInput">
                 <form action="" onSubmit={handleSubmit}>
